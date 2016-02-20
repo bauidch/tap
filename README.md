@@ -18,3 +18,14 @@ Execute a container
 ```bash
 sudo docker exec -it container-name /bin/bash
 ```
+##SQL container
+
+Pull the mysql image
+```bash
+sudo docker pull mysql:latest
+```
+
+Run the MySQL Container
+```bash
+sudo docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
+```
