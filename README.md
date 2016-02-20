@@ -10,3 +10,7 @@ Show all Docker containers
 ``` bash
 sudo docker ps -a
 ```
+Build a image
+``` bash
+docker build -t <yourname>/<image-name> .
+```
