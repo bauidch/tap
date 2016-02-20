@@ -53,7 +53,7 @@ Link MySQL to Container (MySql Port 3306)
 docker run --name webserver --link mysql-server:mysql -d nginx
 ```
 
-###Wordpress
+##Wordpress
 Run wordpress container with linkt to MySQL container
 ```bash
 docker run --name the-blog --link mysql-server:mysql -d wordpress
