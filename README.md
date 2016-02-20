@@ -14,3 +14,7 @@ Build a image
 ``` bash
 docker build -t <yourname>/<image-name> .
 ```
+Execute a container
+```bash
+sudo docker exec -it container-name /bin/bash
+```
