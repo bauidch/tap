@@ -31,7 +31,7 @@ Run the MongoDB Container
 sudo docker run --name mongodb-server -d mongo
 ```
 
-Link MongoDBl to Container(MongoDB port: 27017)
+Link MongoDB to Container(MongoDB port: 27017)
 ```bash
 docker run --name server --link mongodb-server:mongo -d ubuntu
 ```
@@ -48,7 +48,13 @@ Run the MySQL Container
 sudo docker run --name mysql-server -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
 ```
 
-Link MySQl to Container (MySql Port 3306)
+Link MySQL to Container (MySql Port 3306)
 ```bash
 docker run --name webserver --link mysql-server:mysql -d nginx
+```
+
+###Wordpress
+Run wordpress container with linkt to MySQL container
+```bash
+docker run --name the-blog --link mysql-server:mysql -d wordpress
 ```
