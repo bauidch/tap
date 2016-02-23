@@ -6,7 +6,19 @@ Run the Image with your files
 sudo docker run --name flask-app -p 80:80 -d -v ~/your-app:/usr/share/nginx/html bauidch/flask-deployer
 ```
 
+Link MoongoDb to the Container
+```bash
+sudo docker run --name app -p 80:80 --link mongodb-server:mongo bauidch/flask-deployer
+```
+
 Execute the flask-app container
 ```bash
 sudo docker exec -it flask-app /bin/bash
 ```
+
+
+
+### Included Python Modules
+- Uwsgi
+- Flask
+- Pymongo
