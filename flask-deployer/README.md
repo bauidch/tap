@@ -1,6 +1,11 @@
 # flask-deployer
 Flask on nginx with uwsgi 
 
+Install the image
+```bash
+docker pull bauidch/flask-deployer
+```
+
 Run the Image with your files
 ```bash
 sudo docker run --name flask-app -p 80:80 -d -v ~/your-app:/usr/share/nginx/html bauidch/flask-deployer
