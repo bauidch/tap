@@ -70,6 +70,12 @@ Run drupal container with linkt to MySQL container
 docker run --name some-drupal --link mysql-server:mysql -d drupal
 ```
 
+##OwnCloud
+Run OwnCloud container with linkt to MySQL container
+```bash
+docker run --name some-owncloud -p 80:80 --link mysql-server:mysql -d owncloud:8.1  
+```
+
 ##Ghost
 Run wordpress container with linkt to MySQL container
 ```bash
