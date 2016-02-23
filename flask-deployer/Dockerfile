@@ -8,7 +8,8 @@ MAINTAINER bauidch
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update
+RUN echo 'deb http://us.archive.ubuntu.com/ubuntu/ precise universe' >> /etc/apt/sources.list
+RUN apt-get -y update
 RUN apt-get -y install nginx sed python3-pip python3-dev build-essential uwsgi-plugin-python supervisor
 
 # Make logs dir
