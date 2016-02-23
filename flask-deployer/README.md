@@ -13,7 +13,7 @@ sudo docker run --name flask-app -p 80:80 -d -v ~/your-app:/usr/share/nginx/html
 
 ##### ! Your App must run in the app.py !
 
-Link MoongoDb to the Container
+Link MongoDB to the Container
 ```bash
 sudo docker run --name app -p 80:80 --link mongodb-server:mongo bauidch/flask-deployer
 ```
