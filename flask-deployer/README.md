@@ -1,4 +1,6 @@
 # flask-deployer
+[![Docker Hub](https://img.shields.io/badge/Docker Hub-Image-blue.svg?style=flat-square)](https://hub.docker.com/r/bauidch/flask-deployer/)
+
 Flask on nginx with uwsgi 
 
 Install the image
