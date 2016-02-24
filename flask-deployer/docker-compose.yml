@@ -1,0 +1,10 @@
+app:
+  build: .
+  ports:
+   - "80:80"
+  volumes:
+   - ~/MyApp:/usr/share/nginx/html
+  links:
+   - mongo
+mongo:
+  image: mongo
