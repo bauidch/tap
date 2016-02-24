@@ -26,8 +26,13 @@ sudo docker exec -it flask-app /bin/bash
 ```
 
 
-
 ### Included Python Modules
 - Uwsgi
 - Flask
 - Pymongo
+ 
+## Via Docker Compose
+Look at the ```docker-compose.yml``` file.
+- Run App on port 80
+- Include volume ~./MyApp to the app dir in the container
+- Iclude MongoDB to a mongodb container
