@@ -1,5 +1,5 @@
 # Pagekit(CMS) in a Docker Conainer
-![Pagekit version](https://img.shields.io/badge/Pagekit-0.10.1-brightgreen.svg?style=flat-square)
+![Pagekit version](https://img.shields.io/badge/Pagekit-0.10.4-brightgreen.svg?style=flat-square)
 
 
 ###Conatiners
