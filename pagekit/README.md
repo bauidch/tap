@@ -1,6 +1,6 @@
 # Pagekit(CMS) in a Docker Conainer
+![Pagekit version](https://img.shields.io/badge/Pagekit-0.10.1-brightgreen.svg?style=flat-square)
 
-Pagekit files are cloned form the offical Pagekit repo
 
 ###Conatiners
 - Pagekit
