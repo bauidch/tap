@@ -2,7 +2,7 @@
 # Dockerfile to build Pagekit with Nginx and PHP-fpm
 # Based on Ubuntu
 ############################################################
-FROM ubuntu:14-04
+FROM ubuntu:14.04
 
 MAINTAINER bauidch
 
