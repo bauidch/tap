@@ -1,5 +1,5 @@
 pagekit:
-  image: 
+  build: .
   links:
     - db:mysql
   ports:
