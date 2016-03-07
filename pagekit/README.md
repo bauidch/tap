@@ -1,4 +1,4 @@
-# Pagejit in a Docker Conainer
+# Pagekit in a Docker Conainer
 
 Pagekit files are cloned form the offical Pagekit repo
 
