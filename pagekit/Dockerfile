@@ -9,7 +9,7 @@ MAINTAINER bauidch
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -y update
-RUN apt-get -y install nginx php5-fpm php5-json php5-cli php5-mysql php5-curl unzip git supervisor nano
+RUN apt-get -y install nginx php5-fpm php5-json php5-cli php5-mysql php5-curl unzip git supervisor wget
 
 RUN curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer
@@ -17,8 +17,9 @@ RUN mv composer.phar /usr/local/bin/composer
 RUN mkdir -p /pagekit/{public_html,logs}
 RUN mkdir -p /var/log/supervisor
 
-
 WORKDIR /pagekit
+RUN wget https://github.com/pagekit/pagekit/releases/download/0.10.4/pagekit-0.10.4.zip
+RUN unzip pagekit-0.10.4.zip -d public_html/
 
 RUN chown -R www-data: /pagekit/public_html/
 
