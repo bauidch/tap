@@ -77,7 +77,7 @@ docker run --name some-owncloud -p 80:80 --link mysql-server:mysql -d owncloud:8
 ```
 
 ##Ghost
-Run wordpress container with linkt to MySQL container
+Run ghost container with linkt to MySQL container
 ```bash
 sudo docker run --name ghost-blog -p 80:2368 -d -v ~/ghost-blog:/var/lib/ghost ghost
 ```
