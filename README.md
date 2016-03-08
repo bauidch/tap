@@ -81,3 +81,8 @@ Run wordpress container with linkt to MySQL container
 ```bash
 sudo docker run --name ghost-blog -p 80:2368 -d -v ~/ghost-blog:/var/lib/ghost ghost
 ```
+
+### Nginx
+```bash
+sudo docker run --name docker-nginx -p 80:80 -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx
+```
