@@ -1,5 +1,5 @@
 ############################################################
-# Dockerfile to build Nginx and PHP-fpm
+# Dockerfile to build Nginx and PHP7-fpm
 # Based on Ubuntu
 # Date: 10.03.2016
 # Version: 0.0.1
@@ -9,8 +9,12 @@ MAINTAINER bauidch
 
 ENV DEBIAN_FRONTEND noninteractive
 
+RUN apt-get -y install software-properties-common
+RUN add-apt-repository ppa:ondrej/php
 RUN apt-get -y update
-RUN apt-get -y install nginx php5-fpm php5-json php5-cli php5-mysql php5-curl unzip git supervisor wget curl
+RUN apt-get purge php5-*
+RUN apt-get autoremove
+RUN apt-get -y install nginx php7.0-fpm php7.0-json php7.0-cli php7.0-mysql php7.0-curl unzip git supervisor wget curl
 
 RUN curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer
