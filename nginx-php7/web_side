@@ -1,5 +1,5 @@
 server {
-    server_name pagekit.dev;
+    server_name $DOMAIN_NMAE_VHOST;
     listen 80;
     root /pagekit/public_html;
     access_log /pagekit/logs/access.log;
