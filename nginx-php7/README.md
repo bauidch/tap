@@ -1,6 +1,6 @@
 # Nginx with PHP 7 and php-fpm
 
-#### Use your Files
+#### Direcotry
 /htdocs/public_html
 
 
