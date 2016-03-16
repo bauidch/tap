@@ -31,9 +31,9 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD web_side /etc/nginx/sites-available/
 RUN ln -s /etc/nginx/sites-available/web_side /etc/nginx/sites-enabled/web_side
 
-RUN sed -e 's/;daemonize = yes/daemonize = no/' -i /etc/php5/fpm/php-fpm.conf
-RUN sed -e 's/;listen\.owner/listen.owner/' -i /etc/php5/fpm/pool.d/www.conf
-RUN sed -e 's/;listen\.group/listen.group/' -i /etc/php5/fpm/pool.d/www.conf
+RUN sed -e 's/;daemonize = yes/daemonize = no/' -i /etc/php7.0/fpm/php-fpm.conf
+RUN sed -e 's/;listen\.owner/listen.owner/' -i /etc/php7.0/fpm/pool.d/www.conf
+RUN sed -e 's/;listen\.group/listen.group/' -i /etc/php7.0/fpm/pool.d/www.conf
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 CMD ["/usr/bin/supervisord"]
