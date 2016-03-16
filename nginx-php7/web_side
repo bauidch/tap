@@ -1,10 +1,10 @@
 server {
     server_name $DOMAIN_NAME_VHOST;
     listen 80;
-    root /pagekit/public_html;
-    access_log /pagekit/logs/access.log;
-    error_log /pagekit/logs/error.log;
-    index index.php;
+    root /htdocs/public_html;
+    access_log /htdocs/logs/access.log;
+    error_log /htdocs/logs/error.log;
+    index index.html index.htm index.php;
  
     location / {
         try_files $uri $uri/ /index.php?$args;
