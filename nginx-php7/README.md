@@ -4,5 +4,5 @@
 /htdocs/public_html
 
 
-### Use yor Domain Name
-ENV DOMAIN_NAME_VHOST
+### ENV
+DOMAIN_NAME_VHOST
