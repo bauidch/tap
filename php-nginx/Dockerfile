@@ -19,6 +19,7 @@ RUN mkdir -p /www/logs
 RUN mkdir -p /var/log/supervisor
 
 WORKDIR /www
+COPY index.html /www/public_html
 RUN chown -R www-data: /www/public_html/
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
